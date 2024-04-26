@@ -47,3 +47,10 @@ vim.api.nvim_create_autocmd('LspAttach', {
         local opts = { buffer = ev.buf }
     end,
 })
+
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
+lspconfig.html.setup { capabilities = capabilities }
+lspconfig.cssls.setup { capabilities = capabilities }
+lspconfig.gopls.setup {}
+lspconfig.tsserver.setup {}

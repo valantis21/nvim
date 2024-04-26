@@ -33,3 +33,8 @@ vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
 vim.keymap.set('n', '<space>f', function()
     vim.lsp.buf.format { async = true }
 end, opts)
+
+-- buffer controls
+vim.keymap.set('n', '<leader>bn', ':bn<CR>', {})
+vim.keymap.set('n', '<leader>br', ':br<CR>', {})
+vim.keymap.set('n', '<leader>bd', ':bd<CR>', {})
