@@ -6,10 +6,7 @@ require("lazy").setup({
             "nvim-lua/plenary.nvim",
             "nvim-tree/nvim-web-devicons",
             "MunifTanjim/nui.nvim"
-        }
-    },
-    {
-        "junegunn/fzf"
+        },
     },
     {
         "karb94/neoscroll.nvim",
@@ -72,5 +69,11 @@ require("lazy").setup({
     },
     {
         "gleam-lang/gleam.vim"
+    },
+    {
+        "aca/emmet-ls"
+    },
+    {
+        'akinsho/toggleterm.nvim', version = "*", config = true
     },
 })

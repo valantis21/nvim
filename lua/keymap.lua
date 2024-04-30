@@ -38,3 +38,9 @@ end, opts)
 vim.keymap.set('n', '<leader>bn', ':bn<CR>', {})
 vim.keymap.set('n', '<leader>br', ':br<CR>', {})
 vim.keymap.set('n', '<leader>bd', ':bd<CR>', {})
+
+-- terminl controls
+vim.keymap.set('n', '<leader>te', ":ToggleTerm direction=horizontal<CR>")
+vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]])
+vim.keymap.set('t', '<C-w>', [[<C-\><C-n><C-w>]])
+vim.keymap.set('n', '<leader>tf', ':ToggleTerm direction=float<CR>')
